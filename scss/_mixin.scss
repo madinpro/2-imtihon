@@ -1,0 +1,51 @@
+@mixin h1 {
+    width: 546px;
+    height: 243px;
+    color: #36536B;
+    font-family: "DM Serif Display";
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 72px;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin h_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+}
+
+@mixin nav__link {
+    color: #36536B;
+    font-family: "Public Sans";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+@mixin btn__word {
+    color: #FBFCFE;
+    font-family: "Public Sans";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 0;
+    margin: 0;
+    padding: 16px 25px 14px 27px;
+    white-space: nowrap;
+}
+
+@mixin nav__block {
+    flex-direction: column;
+    position: absolute;
+    text-align: center;
+    justify-content: start;
+    display: flex;
+    align-items: center;
+    padding-right: -150px;
+}

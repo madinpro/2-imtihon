@@ -1,0 +1,163 @@
+.header {
+    margin-top: 10px;
+    width: 100%;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__go {
+        display: flex;
+        align-items: center;
+
+    }
+
+}
+
+
+
+.btn__ikki {
+    background-color: var(--color--qiz);
+    color: var(--color--oqish);
+    border: none;
+    padding: 16px 26px;
+    border-radius: 25px;
+    z-index: 2;
+    margin-left: 500px;
+    transition: all 0.8s ease;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    cursor: pointer;
+
+    &:hover {
+        background-color: #DA6D97;
+    }
+
+    &:focus {
+        background-color: #c77494;
+
+    }
+}
+
+.nav {
+    border-radius: 25px;
+
+    &__list {
+        position: absolute;
+        border-radius: 25px;
+        display: flex;
+        gap: 40px;
+        padding: 10px;
+
+        max-width: 400px;
+        width: 100%;
+
+
+    }
+
+
+
+    &__link {
+        color: var(--color--kok);
+        font-family: "Public Sans";
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+        transition: all 1s ease;
+
+
+        &:hover {
+            color: #c61c1c;
+            text-decoration: underline;
+        }
+    }
+}
+
+.header__mobi {
+    display: none;
+}
+
+.btn {
+    background-color: var(--color--oqish);
+    display: none;
+}
+
+@media only screen and (max-width:1040px) {
+    .header.container {
+        background: url(../image/tabletbac2.png) no-repeat;
+        background-size: cover;
+        max-width: 949px;
+        height: 949px;
+        position: absolute;
+        z-index: -1;
+        margin-left: 550px;
+        width: 100%;
+    }
+
+    .hero__info {
+        order: calc(1);
+    }
+
+    .hero__img {
+        order: calc(-1);
+    }
+}
+
+
+
+@media only screen and (max-width:688px) {
+    .nav__list {
+        display: none;
+    }
+
+    .btn__ikki {
+        display: none;
+    }
+
+    .btn {
+        display: block;
+    }
+
+    .header__logo {
+        display: none;
+    }
+
+    .header__mobi {
+        display: block;
+    }
+
+    .btn__logo {
+        display: none;
+    }
+
+    .btn__exi {
+        display: none;
+    }
+
+}
+
+.btn__menu--exit {
+    display: none;
+}
+
+.btn__exi--menu {
+    display: block;
+    background: black;
+}
+
+.nav__block--block {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: var(--color--qor);
+}
+
+.btn__ikki--btn {
+    display: block;
+}
