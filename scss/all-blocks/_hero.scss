@@ -1,1 +1,124 @@
+.hero {
+    .container {
+        padding-top: 70px;
+        background-color: #EDF3F8;
+        padding: 0 40px;
+         margin-top: 240px;
+        display: flex
+    }
+}
 
+.start__heading {
+    @include h1;
+}
+
+.start__input {
+    width: 445px;
+    height: 48px;
+    color: #36536B;
+    font-family: "Public Sans";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 20px;
+    border-radius: 24px;
+    background-color: #FBFCFE;
+    border: none;
+}
+
+
+
+.forms__title {
+    color: #36536B;
+    font-family: "DM Serif Display";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 56px;
+    letter-spacing: -0.369px;
+}
+
+.form__input {
+    width: 445px;
+    height: 48px;
+    border-radius: 24px;
+    border: none;
+    background: #FBFCFE;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    padding: 16px 20px;
+}
+
+.form__btn {
+    border-radius: 24px;
+    background: #BA4270;
+    width: 173px;
+    height: 52px;
+    color: #FBFCFE;
+    font-family: "Public Sans";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    z-index: 1;
+    margin-top: -10;
+    margin-left: -120px;
+    line-height: normal;
+    letter-spacing: -0.115px;
+    position: absolute;
+}
+
+.forms {
+    position: relative;
+
+}
+
+.hero__text {
+    color: #6C8294;
+    font-family: "Public Sans";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 16px;
+    transform: translateX(50px);
+
+}
+
+.form {
+    margin: 0;
+    padding: 0;
+    padding-top: 91px;
+}
+
+.btn {
+    width: 173px;
+    height: 48px;
+    color: #FBFCFE;
+    font-family: "Public Sans";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    transform: translateX(-160px);
+}
+
+.btn__text {
+    color: #6C8294;
+    font-family: "Public Sans";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #6C8294;
+    font-family: "Public Sans";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 20px;
+}
+
+.a {
+    width: 173px;
+    height: 48px;
+}

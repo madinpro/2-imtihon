@@ -1,0 +1,81 @@
+.simple .container {
+    display: flex;
+}
+
+.simple__UI {
+    padding: 40px;
+    padding-top: 149px;
+    margin-left: 110px;
+}
+
+.simple__heading {
+    color: #36536B;
+    font-family: "DM Serif Display";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 56px;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+}
+
+.simple__text {
+    color: #6C8294;
+    font-family: "Public Sans";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    max-width: 445px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    padding-top: 24px;
+}
+.my__phones{
+    display: flex;
+}
+.total__payment{
+    margin: 0;
+    padding: 0;
+}
+.dismiss{
+    transform: translateX(-80px);
+}
+
+@media only screen and (max-width:768px) {
+    .simple 
+        .container{
+            order: var( Simple__UI , my__phones);
+            flex-direction: column;
+            order: calc(1);
+            }
+        .simple__UI{
+            align-items: center;
+            text-align: center;
+            padding-top: 0;
+        }
+        .simple__text{
+            max-width: 573px;
+            width: 100%;
+            text-align: center;
+        }
+        .my__phones{
+            margin-left: 190px;
+            order: calc(-1);
+        }
+}
+@media only screen and (max-width:426px){
+    .simple__heading{
+        font-size: 36px;
+        line-height: 36px;
+    }
+    .simple__text{
+        max-width: 328px;
+        width: 100%;
+    }
+    .my__phones{
+        gap: 50px;
+    }
+}

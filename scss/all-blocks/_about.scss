@@ -1,0 +1,110 @@
+.about {
+
+    background: var(--color-red);
+    // height: 472px;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+
+    }
+
+    .about__texts {
+        padding-bottom: 88px;
+    }
+
+    .about__heading {
+        max-width: 445px;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        padding-top: 100px;
+        padding-bottom: 24px;
+        color: var(--color-olma);
+        font-family: "DM Serif Display";
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 56px;
+    }
+
+    .about__text {
+        max-width: 445px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 32px;
+        width: 445px;
+        color: var(--color-olma);
+        font-family: "Public Sans";
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+    }
+
+    .about__button {
+        margin: 0;
+        padding: 0;
+        padding: 16px 32px;
+        background: none;
+        border: none;
+        color: var(--color-olma);
+        text-align: center;
+        font-family: "Public Sans";
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        border-radius: 24px;
+        border: 1px solid var(--color-olma);
+    }
+
+
+}
+
+.about__flex {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+@media only screen and (max-width:768px) {
+    .about .container {
+        height: 615px;
+        flex-direction: column;
+        padding-top: 88px;
+    }
+
+    .about__flex {
+        order: calc(-1);
+        margin: 0;
+        padding: 0;
+    }
+
+    .about__texts {
+        margin: 0;
+        padding: 0;
+        order: calc(1);
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:649px) {
+    .about__flex {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .about__flex {
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+}
